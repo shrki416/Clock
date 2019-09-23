@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #778ca3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: black;
+    font-size: 4rem;
+}
+
+p {
+    margin: 50px 25px;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background: #bdc3c7;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .4s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input:checked[type='checkbox'] {
+  background: #3498db;
+}
+
+input[type='checkbox']::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:checked[type='checkbox']::before {
+  left: 60px;
+}
+
+.toggle {
+  position: relative;
+  display: inline;
+}
+ 
+label {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  pointer-events: none;
+}
+ 
+.onbtn {
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+}
+ 
+.ofbtn {
+  bottom: 15px;
+  right: 14px;
+  color: #34495e;
+}
+
+.btnText {
+  margin: 0;
+  font-weight: 200;
+}
+
+.clock {
+    text-align: center;
+    padding: 2rem;
+}
+
+.date {
+    color: #4b6584;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#time {
+    color: #4b6584;
+    font-weight: bolder;
+    font-size: 12rem;
+}
