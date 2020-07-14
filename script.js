@@ -29,11 +29,6 @@ function clock() {
 
   let amPM = hours < 12 ? "am" : "pm";
 
-  if (militaryTime === true) {
-    hours = hours > 12 ? hours - 12 : hours;
-    toggle.textContent = "Standard";
-  }
-
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
@@ -41,7 +36,13 @@ function clock() {
     seconds = `0${seconds}`;
   }
 
-  currentTime.innerHTML = `${hours}:${minutes}:${seconds} ${amPM}`;
+  if (militaryTime === true) {
+    hours = hours > 12 ? hours - 12 : hours;
+    toggle.textContent = "Standard";
+    currentTime.innerHTML = `${hours}:${minutes}:${seconds} ${amPM}`;
+  } else {
+    currentTime.innerHTML = `${hours}:${minutes}:${seconds}`;
+  }
 }
 
 toggle.addEventListener("click", () => {
