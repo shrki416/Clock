@@ -40,6 +40,13 @@ p {
   background-color: #4b6584;
   color: #000;
   letter-spacing: 1px;
+  font-weight: bold;
+  font-size: large;
+}
+
+#toggle-btn:hover {
+  color: #4b6584;
+  background-color: #000;
 }
 
 #time {
