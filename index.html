@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Digital Clock App</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="clock">
-        <div class="date">
-            <h2>Current Date:</h2>
-            <p>
-                <span id="day">Monday</span>,
-                <span id="month">October</span>
-                <span id="date">27</span>,
-                <span id="year">2014</span>
-            </p>
-        </div>
-        <br>
-        <div>
-            <h2>Current Time:</h2>
-            <div class="toggleSwitch">
-                <div class="toggle">
-                    <input type="checkbox">
-                    <p class="btnText">AM/PM</p>
-                    <label for="" class="onBtn"></label>
-                    <label for="" class="offBtn"></label>
-                </div>
-            </div>
-            <p id="time">
-                <span id="hr"></span>:
-                <span id="min"></span>:
-                <span id="sec"></span>
-            </p>
-        </div>
+      <div class="date">
+        <h2>Current Date:</h2>
+        <p>
+          <span id="day">Monday</span>,
+          <span id="month">October</span>
+          <span id="date">27</span>,
+          <span id="year">2014</span>
+        </p>
+      </div>
+      <br />
+      <div>
+        <h2>Current Time:</h2>
+        <button id="toggle-btn">Military</button>
+        <p id="time"></p>
+      </div>
     </div>
-</body>
-<script type="text/javascript" src="script.js"></script>
-
+  </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
