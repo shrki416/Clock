@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -7,13 +9,18 @@
 }
 
 body {
-  background-color: #778ca3;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Amatic SC", cursive;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/clock.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 h2 {
-  color: black;
+  color: #fff;
   font-size: 4rem;
 }
 
@@ -22,12 +29,11 @@ p {
 }
 
 .clock {
-  text-align: center;
   padding: 2rem;
 }
 
 .date {
-  color: #4b6584;
+  color: #f1c40f;
   font-weight: bold;
   font-size: 4rem;
 }
@@ -37,7 +43,7 @@ p {
   margin: 1em;
   border-radius: 5px;
   border-style: none;
-  background-color: #4b6584;
+  background-color: #f1c40f;
   color: #000;
   letter-spacing: 1px;
   font-weight: bold;
@@ -45,12 +51,12 @@ p {
 }
 
 #toggle-btn:hover {
-  color: #4b6584;
+  color: #f1c40f;
   background-color: #000;
 }
 
 #time {
-  color: #4b6584;
+  color: #f1c40f;
   font-weight: bolder;
   font-size: 12rem;
 }
