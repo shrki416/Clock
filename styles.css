@@ -48,6 +48,9 @@ p {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: large;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #toggle-btn:hover {
