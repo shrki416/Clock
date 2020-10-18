@@ -2,7 +2,7 @@
 
 A todo app developed entirely in pure **JavaScript**, **HTML** and **CSS**.
 
-checkout the clock [HERE!](https://shrki416.github.io/digitalClockApp/)
+checkout the clock [HERE!](https://shrki416.github.io/Clock/)
 
 ![clock-image](images/project_image.png)
 
